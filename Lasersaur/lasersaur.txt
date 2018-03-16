@@ -1,0 +1,212 @@
+1) origine
+La découpe au laser du FabLab est un LaserSaur , que nous avons construit au printemps 2015.
+Comme base, nous avons pris la version 3.14. Le cadre a été fait, mais en bas déjà plus élevé en nous, afin que nous avons la capacité d'incorporer un axe Z motorisé. Ceci est déjà en production et dans les prochains mois (maintenant mai '15)sera mit en service. Passé ce délai, vous pouvez également graver des objets volumineux et ne serait plus la mise au point pour les plaques plus épaisses à la main.
+Cette version de LaserSaur est si unique et existe seulement dans le FabLab Winti!
+
+2) notion de base
+Notre coupe au laser est un projet open source appelé LaserSaur ( http://www.lasersaur.com ), dont nous avons déjà étendu le matériel et le logiciel Modérément spécifiquement pour le FabLab Winti et nous sommes toujours en expansion.
+Nous avons une source laser 100W CO2. Les faisceaux laser de CO2 sont invisibles, donc vous ne pouvez pas voir quand le faisceau laser tire quelque part hors de la machine. 100W ont beaucoup de puissance et peut également être dangereux pour vous, vos yeux et votre corps!
+Pour cette raison, chaque opération est interdite une fois l'optique (par exemple en frappant avec la main) ont été en quelque sorte réglé !! S'il vous plaît vous connecter nécessairement dans un Lab Manager !!
+
+3)chiffres clés
+Zone de travail:		1220 x 575 mm
+Taille du panneau Max.		1400 x 700 mm
+Vitesse de travail:		8000 mm / min (max)
+Puissance du laser:		100 watts (max à 100%)
+
+4)Préparer un fichier
+Afin de travailler avec le LaserSaur "en douceur", nous avons besoin d'un fichier SVG avec le motif de la coupe au laser pour le couper. Si vous êtes à la recherche de projets laser sur Internet, vous trouverez généralement des fichiers SVG ou DXF. Avec le fichier SVG, vous êtes insouciant. Avec le fichier DXF œuvres d'importation de pas terminée et il commence une odyssée de conversion.
+Pendant ce temps, il est également possible de graver des images (trame). Compte tenu de PNG et JPEG sont bien adaptés. Il est pas encore possible de couper simultanément en une seule étape et à l'écran. Une image SVG intégré est ignoré. (Dans le FabLab c'est la fonction de la grille accessible dans le menu «grille d'impulsion".)
+
+5)Essai d'importation
+Pour essayer:
+Lasersaur Test Server - coupe de lignes et de gravure
+Lasersaur Test Server - grilles d'images
+Le serveur est connecté à un laser. Vous ne pouvez pas commencer à importer des emplois, mais les emplois seront supprimés tous les jours.
+
+6)Création SVG
+Pour le programme de dessin, nous vous recommandons le logiciel libre Inkscape . Dans le correspondant element principal, vous trouverez beaucoup de bonnes informations.
+
+6.1)Préparer l' ordre des sections
+Souvent, il y'a un sens pour appliquer toutes les gravures, puis coupez les parties intérieures, puis couper le bord extérieur de la partie. Pour cela, vous avez besoin de trois couleurs différentes dans votre fichier SVG.
+
+6.2)laser tag
+Les étiquettes laser ne sont pas obligatoires. Il y a des éléments de texte que nous pouvons intégrer dans le SVG, que nous avons utilisé pour classer les performances, la vitesse peut être définie en SVG par la couleur de chaque élément. Ces valeurs ont déjà été définies lorsque vous importez le travail, mais peuvent encore changer manuellement.
+
+Ici et sur la droite, vous pouvez voir un exemple:
+
+  = Pass1: 2200mm / min: 10%: # 000000 =
+ = Pass2: 2200mm / min: 90%: # ff0000 = 
+ 
+ Au premier tour, je gravent le logo FabLab Winti à une vitesse de 2200 mm / min et une puissance de 10%, ce passage "pass1" est ici la couleur attribuée au noir, ce qui correspond à la valeur "000000" dans le système hexadécimal. (La coloration du texte n'a pas d'importance, il est seulement la pour des raisons de clarté, les mêmes que les lignes définies.)
+
+!!! Attention, si vous copiez la valeur de couleur de la boîte sur les machinations des objets Inge, il a le dos de la valeur à 6 chiffres à nouveau deux chiffres pour la transparence! Ces deux vous avez besoin pour effacer!
+
+Dans le deuxième tour, je grave à nouveau avec 2200mm / min, mais avec une puissance de 90%, donc je ne grave pas mais alors coupe la partie dehors.
+
+Les détails sur le format est disponible à partir du manuel .
+
+6.3)Créer SVG utilisant un convertisseur en ligne
+Si vous voulez seulement DXF ou un tout autre format pour Télécharger ou créer, aide beaucoup de chemin à travers un convertisseur en ligne tels que:
+http://www.dxfconverter.org/de.html ou http://www.online-convert.com
+ 
+6.4)Avec Adobe Illustrator
+Adobe Illustrator est un programme de conversion pratique pour la plupart des cas, possible qu'avec la plupart des formats de fichiers, y compris DXF et DWG partiellement lire et enregistrer en tant que SVG. Nous aurons bientôt une installation dans le FabLab.
+ 
+6.5)Suivant les flux de travail pour les fichiers DXF
+6.5.1)dessins Autoddesk qcad
+Avec Autodesk Inventor seulement R12 ou R15 DXF peuvent être exportés. Avec QCAD ceux-ci peuvent être convertis en R13 et sont exportés en SVG. Pour être ensuite positionné avec Incscape. Ok, c'est de la merde, donc il y a un second flux de travail.
+
+6.5.2)dessins Autodesk avec Illustrator
+Dans Autodesk Inventor un dessin est créé et enregistrer en tant que DWG. Eh bien, ouvrez-le avec AutoCAD et enregistrer en tant que version DXF, 2014. Ceux-ci peuvent être ouverts dans Adobe Illustrator CS5 et sont enregistrés en tant que SVG. ...... Umpf !!!
+ 
+6.5.3)Autodesk plaque constructions - mon préféré
+Pour créer un design en tôle, cliquez sur le bouton d'exportation droit de la souris et sélectionner la zone de surface dans la boîte de dialogue Options en mémoire le format «Autocad 2007 DXF", ceci est alors ouvert dans Adobe Illustrator.
+ 
+6.5.4)QCAD et FreeCAD avec Inkscape
+InkScape DXF fichiers QCAD et FreeCAD lire.
+
+6.5.5)Si tout le reste échoue
+Essayez d'utiliser un convertisseur en ligne ou la conversion entre les différents programmes en avant et en arrière ...
+ 
+6.6)mise à l' échelle de mal
+Si un SVG à partir d' un programme externe (non Inkscape) a été créé, il est mis à l' échelle de façon incorrecte lors du téléchargement: Dans Inkscape créer un nouveau fichier. Puis importer les données de l'autre SVG ou coller sur copier coller et l'enregistrer comme un nouveau fichier SVG. Ainsi, l'en-tête du fichier est corrigée. il suffit d'ouvrir le fichier dans Inkscape et réenregistrer pas assez!
+
+6.7)Avec Autodesk Marque
+Autodesk make sert à créer un outil cool de projets de laser, donc les fichiers STL peuvent aussi être transformés à partir des chiffres en Pluggable modèles découpés au laser ... malheureusement j'ai pas eu le temps de me plonger et vous devez le faire seul ... qui sait, peut-être vous écrirez ainsi, ce Chapitre?
+ 
+6.8)avec FlatFab
+FlatFab sert à créer un outil cool de projets de laser, donc aussi les fichiers STL peuvent être transformés à partir des chiffres en Pluggable modèles découpés au laser ... malheureusement je pas eu le temps de me plonger et vous devez le faire seul ... qui sait, peut-être vous écrirez ainsi, ce chapitre ?
+
+6.9)SVG est proprement affiché dans Inkscape, LaserSaur ne voit
+Parfois, il arrive que vous avez un fichier SVG propre qui est proprement affiché dans Inkscape, mais si le LaserSaur a analysé le fichier, vous devez lase seulement une surface blanche et rien. Ensuite, il est souvent utile d'ouvrir un nouveau document Inkscape et copier le modèle à partir d'un autre fichier et collez-là. Et le nouveau document, puis télécharger le nouveau.
+ 
+7)Matériaux et paramètres
+Fondamentalement, nous ne voulons pas travailler à 100% de puissance, parce que sinon nos tube laser vont cassé plus rapidement. Mieux vaut aller vers le bas  avec un peu de performances et de vitesse, de sorte à avoir plus de plaisir avec le laser.
+
+7.1)Découvrez FabLab Winti
+Différents matériaux ont des propriétés différentes. Le tableau suivant fournit des recommandations pour la vitesse et Leistungserte.
+
+matériel	épaisseur	méthode	vitesse	puissance	remarque	utilisateur
+contreplaqué de peuplier	4 mm,	coupe	1500	50%	Pfeilrechts.jpg à partir de 40%	??
+contreplaqué de peuplier	4 mm,	gravure	1500	10%		??
+contreplaqué de peuplier	4 mm,	finesse de gravure	1500	3%	produit des lignes fines (<de 0.5mm)	Claudio
+contreplaqué de bouleau	4 mm,	coupe	1500	65%		??
+contreplaqué de bouleau	4 mm,	gravure	1500	10%		??
+contreplaqué de bouleau	8 mm,	coupe	200	100%	à comprimer presque complètement, facilement 
+bord très carbonisé	Ben
+Contreplaqué ???	6 mm,	coupe	1500	60%		??
+Contreplaqué ???	6 mm,	gravure	1500	10%		??
+Acrylique (PMMA)	6 mm,	coupe	1500	70%		??
+Acrylique (PMMA)	6 mm,	gravure	1500	10%		??
+caoutchouc	3 mm,	gravure	1500	10%		Obi
+caoutchouc	3 mm,	coupe	1500	20%		Obi
+
+7.2)Motif de test Fichier
+
+Motif de test sur 3 mm MDF
+Ce fichier contient les paramètres de différents matériaux qui peuvent être systématiquement auspobiert: test.svg Lasersaur-puissance-vitesse .
+ 
+7.3)Données estimées à partir de l'Internet
+Étant donné que nous ne disposons pas de beaucoup d' expérience avec le laser, nous utilisons les valeurs de http://wiki.dingfabrik.de/index.php/Geräte/Lasersaur_(Lasercutter) et https://sites.google.com/site / lasersaurmaterialswiki / home et http://wiki.happylab.at/w/Laser_Cutter égards à ces sites, le cas échéant aux données de watts, parce que certaines des valeurs sont basées sur 50W et 60W lasers!
+
+Regardez nécessairement les paramètres et d' édition des conseils de http://cutlasercut.com sur les matériaux individuels
+
+matériel	épaisseur	Intensité (%)	Vitesse (mm / min)
+contre-plaqué	4mm	100%	2200
+Finn carton (Archtektenpappe)	1,4 mm	50	1100
+carton	1 mm	50	770
+carton	2 mm,	50	770
+carton	3 mm,	50	500
+Carton blanc couché (Cut)	2 mm,	50	800
+Carton blanc couché (Gravure)	2 mm,	50	3000
+acrylique	2 mm,	50	500
+acrylique	3 mm,	50	400
+Acrylique (Gravure)	3 mm,	50	3000
+Acrylique clair (Cut)	5 mm	50	300
+Acrylique clair (Cut)	6 mm,	50	250
+néon acrylique rouge (Cut)	5 mm	50	300
+néon acrylique rouge (Gravure)	5 mm	50	600
+MDF (Cut)	4 mm,	50	400
+MDF (Cut)	5 mm	50	240
+MDF (Gravure)	4 mm,	50	6000
+Balsa (Cut)	4 mm,	45	600
+Balsa (Gravure)	4 mm,	25	2000
+vernis	<1 mm	45	3500
+Placage (avec du ruban adhésif collé)	<1 mm	30	700
+Contreplaqué - Hêtre (Cut)	4mm	50	250
+Contreplaqué - Peuplier (Cut)	3mm	50	700
+Contreplaqué - Peuplier (Cut)	4mm	50	600
+Contreplaqué - Peuplier (Gravure)	4mm	5	2000
+Contreplaqué - Peuplier (Cut)	6.3mm	50	320
+
+7.4)capacité et la qualité de coupe
+La performance de coupe est affectée par de nombreux facteurs tels que le matériel, la surface, l'épaisseur, Schittparameter, la mise au point et la calibration. Par conséquent, les paramètres ci-dessus ne sont que des lignes directrices que vous devez ajuster à votre fonction de la situation.
+
+7.5)Schittbreite et la zone
+Le faisceau laser présente en face de la lentille a un diamètre d'environ 10-15 mm, et une distance focale de 62,5 mm à un point (environ 0,1 mm) focalisé. En supposant que le point focal est axé sur le dessus du matériau, alors le faisceau élargit au fond par mm d'épaisseur d'environ 0,2 mm. En outre, il existe, selon le rendement et la vitesse encore l'effet que les actes de faisceau laser sur la partie supérieure de la matière plus longtemps que sur le fond. L'effet de ces Effeke sur les réductions ne sont pas parfaitement plane et perpendiculaire. Le plus épais du matériau de coupe et la plus lente, vous devez aller, plus ces effets.
+ 
+8)Connectez - vous au LaserSaur
+Maintenant vient le grand moment! ....
+ 
+8.1)Allumez le laser
+le retour sur le mur près de l'évent est une prise multiple. Si vous avez cette insertion, vous allumez le refroidissement de l'eau, le système d'échappement et le laser. Après avoir branché bips le refroidisseur d'eau 3x. Maintenant, vous avez le laser encore déverrouiller l'arrêt d'urgence et redémarrez le PC à côté du laser.
+
+8.2)Télécharger un fichier
+
+Maintenant , vous pouvez sur 192.168.1.174 ou http://lasersaur.intra.fablabwinti.ch/ vous connecter avec le laser. Si vous ne pouvez pas vous connecter, vous avez probablement oublié l'arrêt d'urgence.
+Maintenant, si vous allez dans Fichier d'importation, vient la fenêtre suivante
+
+Maintenant, allez sur Importer (travail de dialogue en fait pas avec l'Internet Explorer!) vous pouvez maintenant utiliser et préparé votre SVG et le télécharger. Lors de l'importation de l'état gauche, un messages apparait.
+
+La zone de sitter correspond au laser, si vous pensez que le SVG a été réduit correctement, vous pouvez le faire ajouter maintenant, le bouton correspondant ci-dessous le fichier de la file d'attente.
+
+Si vous voulez une analyse d'image (tels que JPEG ou PNG), vous avez la "grille d'impulsion" séparez, sélectionnez l'application et commencez le travail à partir du même PC / ordinateur portable / téléphone mobile où vous l'avez téléchargé, parce qu'il n'y a pas de file d'attente. (Best disponible à côté de l'Lasersaur, lasers sans surveillance!) Les deux applications peuvent être ouverte en même temps, par exemple, il peut aussi y avoir un ensemble de décalage qui est également valable pour les écrans.
+
+Retour à Couper: Si vous tague laser vous aviez inséré les paramètres corrects sont déjà visibles ci-dessous.
+ 
+Méfiez-vous, ne pas appuyer sur le "Envoyer à laser". Cela commencerait immédiatement le moteur. Maintenant, retournez à l'ordinateur, chargez cette page, allez à la liste des travaux de laser et appuyez sur F5 ou recharger. Maintenant que votre travail apparaît ci-dessous, Si vous cliquez sur lui, vous avez à nouveau la même image que précédemment.
+
+8.3)Démarrez l'emploi
+Maintenant, nous commençons au menu laser homing
+Après Homen il vous suffit de saisir les paramètres, les paramètres pour attribuer les couleurs correctes (note un passeport peut être de plusieurs couleurs beihnhalten et une couleur peut être utilisé pour plusieurs passes) Et puis vous avez juste à appuyer sur Envoyer à Lasersaur
+ 
+Et votre partie est lasered.
+
+ça vaut la peine d'avance et d'appuyer sur la double flèche (moitié droite du bouton). ensuite le Lasersaur va bientôt faire un rectangle autour du travail prévu.
+
+8.4)Arrêtez le laser
+Pour éteindre le laser, poussez uniquement sur l'arrêt d'urgence et la porte se ferme. Maintenant Descendez le PC, puis tirez la prise multiple de la paroi.
+
+9)focalisation
+En fonction de l'épaisseur du matériau à couper, la mise au point doit être réglé. 
+Nous avons spécialement imprimé 2 Focuser: 
+Le focuser vert est utilisé pour régler directement à partir du nid d'abeille, le Purple est placé sur la pièce. La surface du porte-oculaire utilisé correspond à l'épaisseur du matériau. Ainsi, le point focal est placé au centre du matériau. Les photos montrent deux variantes d'une épaisseur de 4 mm. 
+La vis rouge sur l'optique laser peut être dissous et l'optique sont ajustés en hauteur. 
+La vis ne peut être que très légèrement serré, sinon le tube est pressé.
+ 
+10)Feu!
+En cas d'incendie, appuyez sur l'arrêt d'urgence, à droite à la machine. La plupart du temps, la flamme va à immédiatement séteindre, sinon essayer d'apprivoiser le feu avec une couverture anti-feu.
+
+Pour les petits feux, vous pouvez également utiliser l'extincteur de CO2 (la bouteille gris sur la coupe au laser à côté de la couverture anti-feu).
+
+S'il vous plaît veuillez à sortir l'extincteur à poudre que en cas d'extrême urgence, car après nous devons revoir complètement la coupe au laser et elle est depuis longtemps hors service !!!!
+ 
+11)problèmes connus
+11.1)lit Accidenté (Incarcération résidus de bois)
+Problème: Lorsque les résidus de bois lasere restent dans la grille en nid d'abeilles et que la grille est décalée (qui peut effectivement se produire en permanence), les résidus peuvent donc bloqué et soulever la grille. La surface de contact est pas de plan plus alors, ce qui conduit (pas dans des endroits coupe à travers) aux propriétés de coupe pauvres. 
+Solution: Le nid d' abeille doit être retiré et tous les résidus de bois sont éliminés en desous. Ceci est mieux fait avec un aspirateur. S'il vous plaît absorber en même temps tous les groupes au bas de la machine à découper. 
+ 
+12)inspiration
+
+Voici un lien très expliqué, avec tous ce que vous pouvez faire avec le cutter laser ...
+http://hackaday.com/2014/06/26/making-flexible-wood-using-a-laser-cutter/
+ 
+13)Sources pour Illustrations
+http://www.freebievectors.com
+http://de.freepik.com/vektoren-beliebt (toujours à la recherche à des résultats gratuits - bien istockphoto confusion Publicité)
+http://www.freevectors.net
+http://www.vectoropenstock.com
+ 
+14)entretien
+la maintenance du laser
