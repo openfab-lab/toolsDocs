@@ -14,3 +14,11 @@ Also, Win10 1709 added a SMB 1.0/CIFS Automatic Removal, so you can either unche
 > Note: I have an older Netgear WNDR4000 Router and use ReadyShare USB File Sharing. It uses SMBv1 (Server), so I have to have SMBv1 installed, but I only need the Client part.
 
 ![image](https://user-images.githubusercontent.com/12049360/41858329-e0b7418e-7899-11e8-9242-16c710569cd6.png)
+
+
+Faut activer la ligne **SMB1.0 etc...**   
+
+![image](https://user-images.githubusercontent.com/12049360/41859226-0541bad2-789c-11e8-8c72-6bfc495d6298.png)
+
+Et en fait,   
+c'est tout. Après redémarage, j'ai pu voir tout les ordis et le NAS connectés sur le réseau local. 
