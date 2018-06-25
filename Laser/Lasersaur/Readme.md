@@ -20,6 +20,10 @@ Fiches *Checklist* qui rappel tous les points à ne surtout pas oublié lors de 
 Fichette qui explique comment réparer, ou entretenir la machine Lasersaur. Répertoir à utilisé en cas de problème ou de lors de la maintenance de la machine. 
 - Remplacement du filtre
 - Calibration des optiques *lentilles et mirroirs*
+
+![fiche calibration des optiques](https://github.com/Lisa-oraa/toolsDocs/blob/master/Laser/Lasersaur/img/fiches-explicatives/calibration%20optique%20fiche%20entretien%20d%C3%A9but.jpg)
+![fiche calibration des optiques](https://github.com/Lisa-oraa/toolsDocs/blob/master/Laser/Lasersaur/img/fiches-explicatives/calibration%20optique%20fiche%20entretien%20d%C3%A9but2.jpg)
+
 - Netoyage compresseur
 - Rangement materiaux
 
