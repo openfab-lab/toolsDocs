@@ -12,6 +12,10 @@ Fiches A5 qui explique **le fonctionnement élémentaire de la machine**, peut �
 ## Fiches Rappel :
 Fiches *Checklist* qui rappel tous les points à ne surtout pas oublié lors de l'utilisation de la machine laser. Cette fiche est déstivé aux **utilisateurs qui ont déja eu une introduction à la machine.** 
 
+![fichette rappel](https://github.com/Lisa-oraa/toolsDocs/blob/master/Laser/Lasersaur/img/fiches-explicatives/fichette%20Rapel%20graveuse%20lazer.jpg)
+
+![fichette rappel](https://github.com/Lisa-oraa/toolsDocs/blob/master/Laser/Lasersaur/img/fiches-explicatives/fichette%20Rapel%20graveuse%20lazer2.jpg)
+
 ## Fiches entretien :
 Fichette qui explique comment réparer, ou entretenir la machine Lasersaur. Répertoir à utilisé en cas de problème ou de lors de la maintenance de la machine. 
 - Remplacement du filtre
