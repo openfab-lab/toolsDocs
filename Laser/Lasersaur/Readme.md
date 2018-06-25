@@ -4,7 +4,6 @@
 Fiches A5 qui explique **le fonctionnement élémentaire de la machine**, peut être utilisé par les novices
 
 ![fiche exlicative 1](https://github.com/Lisa-oraa/toolsDocs/blob/master/Laser/Lasersaur/img/fiches-explicatives/Fiche%20explicative%20a5%20graveuse.jpg)
-
 ![fiche explicative 2](https://github.com/Lisa-oraa/toolsDocs/blob/master/Laser/Lasersaur/img/fiches-explicatives/Fiche%20explicative%20a5%20graveuse2.jpg)
 
 ![fiche explicatives 3](https://github.com/Lisa-oraa/toolsDocs/blob/master/Laser/Lasersaur/img/fiches-explicatives/Fiche%20explicative%20a5%20graveuse3.jpg)
@@ -13,7 +12,6 @@ Fiches A5 qui explique **le fonctionnement élémentaire de la machine**, peut �
 Fiches *Checklist* qui rappel tous les points à ne surtout pas oublié lors de l'utilisation de la machine laser. Cette fiche est déstivé aux **utilisateurs qui ont déja eu une introduction à la machine.** 
 
 ![fichette rappel](https://github.com/Lisa-oraa/toolsDocs/blob/master/Laser/Lasersaur/img/fiches-explicatives/fichette%20Rapel%20graveuse%20lazer.jpg)
-
 ![fichette rappel](https://github.com/Lisa-oraa/toolsDocs/blob/master/Laser/Lasersaur/img/fiches-explicatives/fichette%20Rapel%20graveuse%20lazer2.jpg)
 
 ## Fiches entretien :
