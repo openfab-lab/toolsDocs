@@ -13,3 +13,5 @@
 - [ ] Après utilisations, tous débrancher et ranger à sa place
 
 **Attention le plexiglass fond sur le foret si on va trop vite**
+
+![shema foreuse](https://github.com/Lisa-oraa/toolsDocs/blob/master/outillage/image/foreuse-colonne-explication.PNG)
