@@ -16,9 +16,20 @@ Also, Win10 1709 added a SMB 1.0/CIFS Automatic Removal, so you can either unche
 ![image](https://user-images.githubusercontent.com/12049360/41858329-e0b7418e-7899-11e8-9242-16c710569cd6.png)
 
 
-Faut activer la ligne **SMB1.0 etc...**   
+You need to activate **SMB1.0 etc...**   
 
 ![image](https://user-images.githubusercontent.com/12049360/41859226-0541bad2-789c-11e8-8c72-6bfc495d6298.png)
 
-Et en fait,   
-c'est tout. Après redémarage, j'ai pu voir tout les ordis et le NAS connectés sur le réseau local. 
+And... that's it.  
+After reboot, I had all the network visible.  
+
+Pour les irréductibles utilisateur de windows en français.  
+La traduction est différente :  
+
+`Panneau de configuration > Programmes > Activer ou désactiver des fonctionnalités Windows`
+
+et il faut activer ceci: 
+
+![image](https://user-images.githubusercontent.com/25099826/42094104-003d3d20-7baf-11e8-9b9d-2c499e26fd83.png) 
+
+Merci @zuperninja pour la remarque. 
