@@ -4,3 +4,8 @@
   
 Linux, Windows managment. How to setup a iso on hdd.   
 Basics we need to install a distro on any board.
+
+
+### Printer
+
+WorkForce WF‑7610
