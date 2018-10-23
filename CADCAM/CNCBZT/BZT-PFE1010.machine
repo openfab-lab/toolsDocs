@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<machine xmlns="http://www.hsmworks.com/xml/2009/machine">
+
+  <vendor>BZT</vendor>
+
+  <model>PFE1010</model>
+
+  <description>OF-BZT</description>
+
+  <control>LinuxCNC</control>
+
+  <machining additive="no" jet="no" milling="yes" turning="no"/>
+
+  <dimensions depth="1700mm" height="850mm" weight="210kg" width="1450mm"/>
+
+  <capacities depth="1150mm" height="125mm" weight="50kg" width="1000mm"/>
+
+  <coolant options=""/>
+
+  <multiAxis adjust="no" angle="10deg" cone="3deg" linearizationTolerance="0.040000000000000001mm" method="off" tolerance="0.040000000000000001mm"/>
+
+  <tooling maximumToolDiameter="8mm" maximumToolLength="60mm" maximumToolWeight="1.5kg" numberOfTools="100" toolChanger="no" toolPreload="no"/>
+
+  <machiningTime ratio="1" toolChangeTime="300s"/>
+
+  <home x="10mm" y="10mm" z="120mm"/>
+
+  <capabilities maximumBlockProcessingSpeed="0" maximumFeedrate="3000mm/min" workOffsets="100"/>
+
+  <simulation retractOnIndexing="yes" shortestAngularRotation="yes" wcs="0mm 0mm 0mm">
+    <machineAssembly></machineAssembly>
+  </simulation>
+
+  <post>
+    <postProcessor>C:/Users/Nicolas/AppData/Local/Autodesk/webdeploy/production/ce69b5085f183e9fbd0b866247cde236e92ac45c/Applications/CAM360/Data/Posts/linuxcnc.cps</postProcessor>
+    <postProperties>
+      <Parameters>
+        <Parameter expression="true" name="optionalStop" value="true"/>
+        <Parameter expression="true" name="preloadTool" value="true"/>
+        <Parameter expression="true" name="separateWordsWithSpace" value="true"/>
+        <Parameter expression="1" name="sequenceNumberIncrement" value="1"/>
+        <Parameter expression="10" name="sequenceNumberStart" value="10"/>
+        <Parameter expression="true" name="showNotes" value="true"/>
+        <Parameter expression="true" name="showSequenceNumbers" value="true"/>
+        <Parameter expression="false" name="useG28" value="false"/>
+        <Parameter expression="true" name="useParametricFeed" value="true"/>
+        <Parameter expression="false" name="useRadius" value="false"/>
+        <Parameter expression="true" name="writeMachine" value="true"/>
+        <Parameter expression="true" name="writeTools" value="true"/>
+      </Parameters>
+    </postProperties>
+    <setupSheet></setupSheet>
+    <setupSheetProperties/>
+  </post>
+
+  <axis actuator="linear" id="Y" link="table" maximumFeed="4000mm/min" range="0mm 1150mm" resolution="0.01mm"/>
+
+  <axis actuator="linear" id="X" link="table" maximumFeed="3000mm/min" range="0mm 1000mm" resolution="0.01mm"/>
+
+  <axis actuator="linear" id="Z" link="head" maximumFeed="1000mm/min" range="0mm 125mm" resolution="0.01mm"/>
+
+  <spindle axis="0 0 1" maximumPower="1.05kW" maximumSpeed="29000rpm" minimumSpeed="10000rpm">
+    <description>Kress 1050 FME</description>
+  </spindle>
+
+</machine>
