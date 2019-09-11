@@ -8,4 +8,5 @@ Basics we need to install a distro on any board.
 
 ### Printer
 
-WorkForce WF‑7610
+**WorkForce WF‑7610**  
+Installer les drivers pour accéder aux paramètres complet.  
