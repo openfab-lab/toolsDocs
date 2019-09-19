@@ -1,6 +1,6 @@
 ## Informatics and computer science. 
-  As soon as we need computing power or IP knowledge, it will be here. 
-  
+  As soon as we need computing power or IP knowledge, it will be here.  
+  Mostly sofware stuffs.  
   
 For example: 
 - Linux, Windows managment. 
