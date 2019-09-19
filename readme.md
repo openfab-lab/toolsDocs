@@ -1,11 +1,11 @@
 Repository about documentation, tutorials linked to Openfab
 
-- **3dprint**  
-  For howTo and setups for 3D printers
 - **101**  
   Basics and Safety
-- **CAD**    
-  All about the software we use before making.
+- **3dprint**  
+  For howTo and setups for 3D printers
+- **CAD/CAM**    
+  All about the software we use before making, and tutorial for cnc machines. 
 - **Electronics**  
   From soldering a led to programming Arduino
 - **Fabrics**  
