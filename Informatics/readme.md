@@ -11,5 +11,5 @@ For example:
 
 ### Printer 
 
-**[WorkForce WF‑7610](/Epson drivers)**  
+**[WorkForce WF‑7610](https://github.com/openfab-lab/toolsDocs/tree/master/Informatics/Epson%20drivers)**  
 Installer les drivers pour accéder aux paramètres complet.  
