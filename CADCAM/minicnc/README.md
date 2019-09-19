@@ -1,15 +1,13 @@
-[Tutoriel pour la minicnc](https://github.com/justineboudeville/tuto_minicnc#hello-world-)
 
+# Tutoriel pour la minicnc
+---
 
 1. [Introduction](#hello-world-)
 1. [Inkscape, préparation fichier](#1-ouvrir-inkscape)
 1. [Sur la machine cnc](#sur-la-machine-)
 
 
-# MINICNC, tutoriel
----
-
-# Hello world! ㋡
+## Hello world! ㋡
 
     name: Justine Boudeville
     job: Graphic Designer
