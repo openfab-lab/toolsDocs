@@ -1,4 +1,4 @@
-- Informatics and computer science. 
+## Informatics and computer science. 
   As soon as we need computing power or IP knowledge, it will be here. 
   
   
