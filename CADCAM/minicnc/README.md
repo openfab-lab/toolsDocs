@@ -1,6 +1,5 @@
 
 # Tutoriel pour la minicnc
----
 
 1. [Introduction](#hello-world-)
 1. [Inkscape, préparation fichier](#1-ouvrir-inkscape)
