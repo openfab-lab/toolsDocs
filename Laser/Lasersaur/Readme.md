@@ -48,7 +48,7 @@ Yumm
 
 ### Ajustement de la lentille 
 
-![Position Lentille](https://github.com/openfab-lab/toolsDocs/blob/master/Lasersaur/img/LasersaurLensAdjust.jpg)  
+![Position Lentille](https://github.com/openfab-lab/toolsDocs/blob/master/Laser/Lasersaur/img/LasersaurLensAdjust.jpg)  
 
 J'ai donc modélisé le support de lentille avec un calcul "auto" des distances en jeux.  
 La dimension du tube est connue, la longueur focale aussi (dépend de la lentille), je veux une distance facile à mesurer entre le point de focale et le bas du tube, ici 15mm. Ce qui me donne la valeur de 5,4mm comme position du bas de la lentille.  
@@ -56,9 +56,9 @@ Pour plus d'info ([voir le wiki laseraur](https://github.com/nortd/lasersaur/wik
 *note: la lentille se place face courbe vers le haut*  
 
 - step 1: Fixer la dimension désirée de 5,4 sur le pied à coulisse. La vis au dessus et là pour fixer le pied en position. 
-![pied à coulisse](https://github.com/openfab-lab/toolsDocs/blob/master/Lasersaur/img/IMG_20170214_094633.jpg)  
+![pied à coulisse](https://github.com/openfab-lab/toolsDocs/blob/master/Laser/Lasersaur/img/IMG_20170214_094633.jpg)  
 - step 2: Placer la première bague de réglage à la bonne hauteur en utilisant le pied à coulisse.   
-![première bague](https://github.com/openfab-lab/toolsDocs/blob/master/Lasersaur/img/IMG_20170214_094801.jpg)  
+![première bague](https://github.com/openfab-lab/toolsDocs/blob/master/Laser/Lasersaur/img/IMG_20170214_094801.jpg)  
 - step 3: Placer délicatement la lentille. Ne pas utiliser ses mains nues. 
 - step 4: Visser la bague de serrage et vérifier sa stabilité. 
 - step 5: Remettre en place sur le chariot. 
