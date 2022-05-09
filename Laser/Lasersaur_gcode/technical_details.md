@@ -299,11 +299,18 @@ Discussion ongoing https://forum.lightburnsoftware.com/t/lightburn-doesnt-seem-t
 For now, door detector has been removed, the Openbuilds controller doesn't see anymore when the door is open.
 Still, there is the secondary security on laser: the second door detector is wired to the laser WP itself, so the job continues but the laser stops firing.
 
+### Camera
+
+![](img/preview_camera_pic.jpg)
+
+We added an OV3660 module with 110° field to integrate it in LightBurn and cover the entire workspace of a Lasersaur.
+
+The mount is available as STL and Openscad source on Thingiverse: https://www.thingiverse.com/thing:5377499.
+
+The OV3660 module came from Aliexpress (e.g. https://www.aliexpress.com/item/1005003937144930.html) and is now integrated with Lightburn software (cf https://lightburnsoftware.github.io/NewDocs/UsingACamera.html
+)
+
 
 ## TODO:
 * git save lightburn config
-* laser calibration
-* new camera...
-  * [OV3660 module with 110° field](https://www.aliexpress.com/item/1005003937144930.html)
-* material list
-  * https://support.thunderlaserusa.com/support/solutions/articles/65000151932-100-watt-materials-libraries ?
+* material list, start from https://support.thunderlaserusa.com/support/solutions/articles/65000151932-100-watt-materials-libraries ?
