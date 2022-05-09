@@ -214,6 +214,10 @@ Initial settings:
 
 ```avrdude -c arduino -P /dev/ttyUSB0 -b 115200 -p atmega328p -B 10 -U flash:w:grbl.hex:i```
 
+or just
+
+```make flash```
+
 ## Setup
 
 Terminal:
@@ -301,3 +305,5 @@ Still, there is the secondary security on laser: the second door detector is wir
 * laser calibration
 * new camera...
   * [OV3660 module with 110° field](https://www.aliexpress.com/item/1005003937144930.html)
+* material list
+  * https://support.thunderlaserusa.com/support/solutions/articles/65000151932-100-watt-materials-libraries ?

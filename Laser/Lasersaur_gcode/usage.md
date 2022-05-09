@@ -6,7 +6,7 @@ Make sure to always home first!!
 
 Homing is in the rear-left corner and we want it to be 0,615 so front-left is 0,0 and workspace is in the positive quadrant.
 
-If workspace lost its configuration, this can be reenabled with:
+If workspace lost its configuration, i.e. it doesn't tell you you are at (0,615) after homing, this can be reenabled with:
 ```
 $H
 G10 P1 L20 X0 Y615
