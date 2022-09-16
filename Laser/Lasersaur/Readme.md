@@ -1,54 +1,55 @@
 # Utilisation de la Lasersaur :
 
-## Fiches Explicatives :
-Fiches A5 qui explique **le fonctionnement élémentaire de la machine**, peut être utilisé par les novices
+_Todo: Mise à jour des explications via LightBurn_  
+En attendant, voici le [**LightBurn beginner Tour**](https://docs.lightburnsoftware.com/BeginnerUITour.html)
 
-![fiche exlicative 1](https://github.com/Lisa-oraa/toolsDocs/blob/master/Laser/Lasersaur/img/fiches-explicatives/Fiche%20explicative%20a5%20graveuse.jpg)
-![fiche explicative 2](https://github.com/Lisa-oraa/toolsDocs/blob/master/Laser/Lasersaur/img/fiches-explicatives/Fiche%20explicative%20a5%20graveuse2.jpg)
+![softwareUI](https://docs.lightburnsoftware.com/img/MainWindow.png)
 
-![fiche explicatives 3](https://github.com/Lisa-oraa/toolsDocs/blob/master/Laser/Lasersaur/img/fiches-explicatives/Fiche%20explicative%20a5%20graveuse3.jpg)
+# Maintenace
 
-## Fiches Rappel :
-Fiches *Checklist* qui rappel tous les points à ne surtout pas oublié lors de l'utilisation de la machine laser. Cette fiche est déstivé aux **utilisateurs qui ont déja eu une introduction à la machine.** 
+### Fiches entretien :
+Fichette _(à mettre à jour depuis le changement de controleur)_ qui rapelle les principaux éléments à surveiller pour le fonctionnement optimale de la machine Lasersaur.  
 
-![fichette rappel](https://github.com/Lisa-oraa/toolsDocs/blob/master/Laser/Lasersaur/img/fiches-explicatives/fichette%20Rapel%20graveuse%20lazer.jpg)
-![fichette rappel](https://github.com/Lisa-oraa/toolsDocs/blob/master/Laser/Lasersaur/img/fiches-explicatives/fichette%20Rapel%20graveuse%20lazer2.jpg)
-
-## Fiches entretien :
-Fichette qui explique comment réparer, ou entretenir la machine Lasersaur. Répertoir à utilisé en cas de problème ou de lors de la maintenance de la machine. 
-- Remplacement du filtre
-- Calibration des optiques *lentilles et mirroirs*
+#### Nettoyage des trous d'aspiration des fumées. 
+  1. démonter le tube vers le filtre. Nous ne voulons pas envoyer toute la crasse dans le filtre, branchez y l'aspirateur à la place. 
+  2. alumer l'aspirateur et dégager chaque trou de l'accumulation de poussière/colle/résidus.   
+  3. remettre tout en place, enfin.   
+  _Perso, j'utilise une mèche étagée pour ce nettoyage. Elles sont dans la boite "FORER" bien sûr_   
+   ![image](https://user-images.githubusercontent.com/12049360/190647729-d9fca39e-0481-447a-a7e5-1b48f4d157b1.png)
+#### Calibration des optiques *lentilles et mirroirs*
 
 ![fiche calibration des optiques](https://github.com/Lisa-oraa/toolsDocs/blob/master/Laser/Lasersaur/img/fiches-explicatives/calibration%20optique%20fiche%20entretien%20d%C3%A9but.jpg)
 ![fiche calibration des optiques](https://github.com/Lisa-oraa/toolsDocs/blob/master/Laser/Lasersaur/img/fiches-explicatives/calibration%20optique%20fiche%20entretien%20d%C3%A9but2.jpg)
 
-- Netoyage compresseur
-- Rangement materiaux
+#### Nettoyage de la boite
+Avec l'aspirateur, il est important de maintenir le fond de la machine libre des débris de coupe pour éviter le feu.
+#### Rangement materiaux https://github.com/openfab-lab/toolsDocs/issues/12
+1. Ne pas laisser des chutes non nettoyée des débris.
+2. Faire des tests ou un job en plein milieu d'une planche = zones gâchées = Nooooob = le mal :japanese_goblin:
+3. **Diviser en plaques faciles à ranger et jeter, en petit morceaux, les chutes trop petites. **
 
+![img_20180927_102641_dro](https://user-images.githubusercontent.com/12049360/46133788-a0214d80-c241-11e8-8865-908046e79048.jpg)
 
-# Maintenace
+---
+# Les détails techniques
+## Calibration
+Alignement, alignement et alignement. Tout doit être parfait, c'est simple en fait. 
+
+![image](https://user-images.githubusercontent.com/12049360/190655379-43428a16-a02d-4c93-9cf8-992712229cef.png)
+
+_TODO_
+
+- Réassemblage du porte lentille. **C'EST A CE MOMENT QUE C'EST DELICAT, il faut bien ajuster les bagues du tube filleté pour obtenir une hauteur précise de la lentille**  
 
 ## Point de focale
+![image](https://user-images.githubusercontent.com/12049360/190654232-17a0de34-ba7a-4669-8005-f487257e2042.png)
 
-**Contexte**  
-![contimac CM240](http://www.contimac.be/Repository/Cached/Producten/25150-canvas-290.jpg)  
-Le compresseur de puissance qu'on utilise ([Contimac CM240](http://www.contimac.be/fr/produit/4111211125/compresseurs-professional/sans-huile-coaxiaux/cm-240-10-5-w)) au bureau a accumulé de la condensation dans sa réserve d'air. En le déplaçant pour x raison à l'instant t, l'eau pleine de rouille s'est engagée dans le circuit d'air du laser.  
-Aboutissant à une belle diarhée brune sur le panneau en cours de découpe et dans le tube support de lentille ainsi que dans le circuit d'air comprimé.   
-Yumm  
+Dans notre cas :   
+![Position Lentille](https://github.com/openfab-lab/toolsDocs/blob/master/Laser/Lasersaur/img/LasersaurLensAdjust.jpg)  
 
-**Résolution**
-- Couper d'urgence la machine. Le bouton d'arrêt d'urgence est à droite. Il est rouge. 
-- Nettoyage du compresseur et vidange du mieux qu'on peut de la réserve d'air. 
-- Nettoyage du porte lentille et de la lentille, à l'eau sans savon puis à l'alcool isopropylique (aka isopropanol, aka rubbing alcohol) 
-- Nettoyage du circuit d'air comprimé, les tubes dès la sortie du compresseur. J'ai utilisé une seringue 50ml pour injecter plusieurs doses d'eau robinet, puis d'eau distillée, puis d'eau distillée + isopropanol (pour accélérer l'évaporation) 
-- Faire tourner le second compresseur d'aérographe du lab un long moment jusqu'à satisfaction que le système est sec. 
-- Nettoyage de la machine, à l'intérieur et le chariot pour les éclabousures.
-- Réassemblage du porte lentille. **C'EST A CE MOMENT QUE C'EST DELICAT, il faut bien ajuster les bagues du tube filleté pour obtenir une hauteur précise de la lentille**  
-- Réassemblage de l'ensemble et test de fonctionnement. 
+
 
 ### Ajustement de la lentille 
-
-![Position Lentille](https://github.com/openfab-lab/toolsDocs/blob/master/Laser/Lasersaur/img/LasersaurLensAdjust.jpg)  
 
 J'ai donc modélisé le support de lentille avec un calcul "auto" des distances en jeux.  
 La dimension du tube est connue, la longueur focale aussi (dépend de la lentille), je veux une distance facile à mesurer entre le point de focale et le bas du tube, ici 15mm. Ce qui me donne la valeur de 5,4mm comme position du bas de la lentille.  
