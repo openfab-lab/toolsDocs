@@ -127,6 +127,10 @@ chown openfab.openfab /home/openfab/Desktop/lightburn.desktop
 ```
 right click on icon -> allow launching
 
+## Fonts
+
+apt install fonts-cabin
+
 ## Samba
 
 ```
