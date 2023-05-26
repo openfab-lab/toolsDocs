@@ -12,6 +12,13 @@ $H
 G10 P1 L20 X0 Y615
 ```
 
+If the machine refuses to home, it's very probably because the head is too close to a border or another. To solve it:
+
+* Turn the switch of the OpenBuilds controller *off*, it will turn off the motors.
+* Move by hand the head a few centimeters away from the borders. For the vertical axis, do it by turning by hand the wheel in the rear middle to move the arm. For the horizontal axis, pull gently the belt to move the head.
+* Turn the switch of the OpenBuilds controller *on*.
+* Home with lightburn.
+
 # Share
 
 Directory ~/Public is shared over Samba and WebDAV
